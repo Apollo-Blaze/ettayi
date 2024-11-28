@@ -1,0 +1,12 @@
+README.md
+setup.py
+ettayi/__init__.py
+ettayi/cli.py
+ettayi/interpreter.py
+ettayi/parser.py
+ettayi.egg-info/PKG-INFO
+ettayi.egg-info/SOURCES.txt
+ettayi.egg-info/dependency_links.txt
+ettayi.egg-info/entry_points.txt
+ettayi.egg-info/requires.txt
+ettayi.egg-info/top_level.txt
