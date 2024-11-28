@@ -4,13 +4,13 @@ Tired of coding in English? Why not code in Malayalam for a change? Ettayi is a 
 
 **Disclaimer:** No, this is *definitely* not copied from Bhai Lang! 😜
 
-<div style="text-align: center;">
-    ![Code](assets/1.jpeg)
-</div>
+<p align="center">
+    <img src="assets/1.jpeg" alt="Code">
+</p>
 
-<div style="text-align: center;">
-    ![Output](assets/2.jpeg)
-</div>
+<p align="center">
+    <img src="assets/2.jpeg" alt="Output">
+</p>
 ## Features
 
 - Write and execute code in Malayalam using **.ettayi** files.
