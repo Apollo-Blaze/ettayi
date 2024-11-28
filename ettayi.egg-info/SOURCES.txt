@@ -1,6 +1,8 @@
+LICENSE
 README.md
 setup.py
 ettayi/__init__.py
+ettayi/__main__.py
 ettayi/cli.py
 ettayi/interpreter.py
 ettayi/parser.py

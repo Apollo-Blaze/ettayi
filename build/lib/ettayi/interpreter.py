@@ -292,7 +292,7 @@ if __name__ == "__main__":
     interpreter = EttayiInterpreter()
 
     code = '''
-    "Welcome to Ettayi Language!" para;
+    "Hello ettayi sugalle" para;
 
 ivananu a = 5;
 ivananu b = 10;
