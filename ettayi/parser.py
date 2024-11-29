@@ -71,7 +71,7 @@ class EttayiTransformer(Transformer):
     
     def input_statement(self, args):
         var_name = str(args[0])  # Extract the variable name
-        
+        self.variables[var_name]=0
         return ("input",var_name)
 
     def print_statement(self, args):
@@ -94,7 +94,6 @@ class EttayiTransformer(Transformer):
         var_name = str(args[0])
         op = args[1].data  # Extract the operation type
         value = self.evaluate_expression(args[2])
-
         if var_name not in self.variables:
             raise NameError(f"Variable '{var_name}' is not defined. Declare it first using 'ivananu'.")
 
@@ -210,9 +209,9 @@ parser = Lark(ettayi_grammar, parser="lalr", transformer=EttayiTransformer())
 # Example code in Ettayi Language
 if __name__ == "__main__":
     code = '''
-    ivananu a=10;
-    anenki(a>9){
-        a para ;
+    a choik;
+    anenki(a<9){
+        a +=1 ;
     }
 
     '''

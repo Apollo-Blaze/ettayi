@@ -1,7 +1,7 @@
 from lark import Lark, Tree, Token
 
-# Assuming the parser and transformer are already set up correctly in the parser file.
-import ettayi.parser as parser  # Your parser containing the Ettayi grammar and transformer
+import parser as parsera
+from ettayi.parser import parser
 
 class EttayiInterpreter:
     def __init__(self):
@@ -288,55 +288,16 @@ def execute_ettayi_file(filename):
 # Initialize the interpreter and parser
 if __name__ == "__main__":
     # Ensure you import the Ettayi grammar and transformer from your parser file
-    parser = Lark(parser.ettayi_grammar, parser="lalr", transformer=parser.EttayiTransformer())
+    parsera = Lark(parsera.ettayi_grammar, parser="lalr", transformer=parsera.EttayiTransformer())
     interpreter = EttayiInterpreter()
 
     code = '''
-    "Hello ettayi sugalle" para;
-
-ivananu a = 5;
-ivananu b = 10;
-ivananu sum = a + b;
-
-"The sum of a and b is:" para;
-sum para;
-
-"Enter a number:" para;
-user_input choik;
-"You entered:" para;
-user_input para;
-
-anenki (user_input > sum) {
-    "Your number is greater than the sum." para;
-} allenki (user_input < sum) {
-    "Your number is less than the sum." para;
-} avasanam {
-    "Your number is equal to the sum." para;
-}
-
-"Looping through numbers:" para;
-ithinulil (i = 1..5) {
-    i para;
-}
-
-ivananu count = 0;
-
-cheyuka (count < 3) {
-    "Current count:" para;
-    count para;
-    count += 1;
-}
-
-ivananu x = 10;
-x += 5;
-"The value of x after incrementing is:" para;
-x para;
-
+        "Hello" para;
     '''
 
 
     # Parse the code using the Ettayi parser
-    ast = parser.parse(code)
+    ast = parsera.parse(code)
     print(f"Generated AST: {ast}")
 
     # Execute the parsed AST with the interpreter
