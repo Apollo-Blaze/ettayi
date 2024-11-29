@@ -2,9 +2,15 @@
 
 Tired of coding in English? Why not code in Malayalam for a change? Ettayi is a programming language that lets you write code in Manglish, blending Malayalam and English for a fun experience. Bring a little Kerala flair to your code and make programming a bit more exciting!
 
-**Disclaimer:** No, this is *definitely* not copied from Bhai Lang! 😜
-![Code](assets/1.jpeg)
-![Output](assets/2.jpeg)
+**Disclaimer:** No, this is *definitely* not inspired from Bhai Lang! 😜
+
+<p align="center">
+    <img src="assets/1.jpeg" alt="Code">
+</p>
+
+<p align="center">
+    <img src="assets/2.jpeg" alt="Output">
+</p>
 
 ## Features
 
@@ -39,10 +45,10 @@ Tired of coding in English? Why not code in Malayalam for a change? Ettayi is a 
   anenki (x > 0) {
     "Positive" para;
 }
-ithinulil (x = 1..10) {
+allenki (x < 10) {
     x para;
 }
-allenki{
+avasanam {
   "hello" para;
 }
 ````
