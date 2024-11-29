@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="ettayi",
-    version="1.0.3",
+    version="1.0.6",
     author="Apollo-Blaze",
     author_email="srichandsureshrocks@gmail.com",
     description="Ettayi Lang",

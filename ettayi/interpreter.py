@@ -1,6 +1,5 @@
 from lark import Lark, Tree, Token
 
-import parser as parsera
 from ettayi.parser import parser
 
 class EttayiInterpreter:
@@ -288,7 +287,7 @@ def execute_ettayi_file(filename):
 # Initialize the interpreter and parser
 if __name__ == "__main__":
     # Ensure you import the Ettayi grammar and transformer from your parser file
-    parsera = Lark(parsera.ettayi_grammar, parser="lalr", transformer=parsera.EttayiTransformer())
+    parser = Lark(parser.ettayi_grammar, parser="lalr", transformer=parser.EttayiTransformer())
     interpreter = EttayiInterpreter()
 
     code = '''
@@ -297,7 +296,7 @@ if __name__ == "__main__":
 
 
     # Parse the code using the Ettayi parser
-    ast = parsera.parse(code)
+    ast = parser.parse(code)
     print(f"Generated AST: {ast}")
 
     # Execute the parsed AST with the interpreter

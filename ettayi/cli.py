@@ -2,7 +2,7 @@ import argparse
 import sys
 from ettayi.interpreter import EttayiInterpreter
 from ettayi.parser import ettayi_grammar  # Import your grammar here
-import parser as parserr
+import ettayi.parser as parserr
 from lark import Lark
 
 def main():
