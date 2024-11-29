@@ -45,10 +45,10 @@ Tired of coding in English? Why not code in Malayalam for a change? Ettayi is a 
   anenki (x > 0) {
     "Positive" para;
 }
-ithinulil (x = 1..10) {
+allenki (x < 10) {
     x para;
 }
-allenki{
+avasanam {
   "hello" para;
 }
 ````
