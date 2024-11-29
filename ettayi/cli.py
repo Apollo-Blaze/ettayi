@@ -1,7 +1,7 @@
 import argparse
 import sys
-from interpreter import EttayiInterpreter
-from parser import ettayi_grammar  # Import your grammar here
+from ettayi.interpreter import EttayiInterpreter
+from ettayi.parser import ettayi_grammar  # Import your grammar here
 import parser as parserr
 from lark import Lark
 
